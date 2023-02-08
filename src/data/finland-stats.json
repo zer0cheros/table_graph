@@ -1,0 +1,97 @@
+[
+    {
+      "year": 2004,
+      "population": 5248616,
+      "averageTemperature": 5.9
+    },
+    {
+      "year": 2005,
+      "population": 5277939,
+      "averageTemperature": 5.8
+    },
+    {
+      "year": 2006,
+      "population": 5306479,
+      "averageTemperature": 5.7
+    },
+    {
+      "year": 2007,
+      "population": 5334524,
+      "averageTemperature": 5.6
+    },
+    {
+      "year": 2008,
+      "population": 5361922,
+      "averageTemperature": 5.5
+    },
+    {
+      "year": 2009,
+      "population": 5388623,
+      "averageTemperature": 5.4
+    },
+    {
+      "year": 2010,
+      "population": 5414577,
+      "averageTemperature": 5.3
+    },
+    {
+      "year": 2011,
+      "population": 5439752,
+      "averageTemperature": 5.2
+    },
+    {
+      "year": 2012,
+      "population": 5464096,
+      "averageTemperature": 5.1
+    },
+    {
+      "year": 2013,
+      "population": 5488561,
+      "averageTemperature": 5.0
+    },
+    {
+      "year": 2014,
+      "population": 5512287,
+      "averageTemperature": 4.9
+    },
+    {
+      "year": 2015,
+      "population": 5535276,
+      "averageTemperature": 4.8
+    },
+    {
+      "year": 2016,
+      "population": 5557655,
+      "averageTemperature": 4.7
+    },
+    {
+      "year": 2017,
+      "population": 5579370,
+      "averageTemperature": 4.6
+    },
+    {
+      "year": 2018,
+      "population": 5600486,
+      "averageTemperature": 4.5
+    },
+    {
+      "year": 2019,
+      "population": 5621157,
+      "averageTemperature": 4.4
+    },
+    {
+      "year": 2020,
+      "population": 5542517,
+      "averageTemperature": 5.6
+    },
+    {
+      "year": 2021,
+      "population": 5570497,
+      "averageTemperature": 5.5
+    },
+    {
+      "year": 2022,
+      "population": 5607586,
+      "averageTemperature": 5.4
+    }
+  ]
