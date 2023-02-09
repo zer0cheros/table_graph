@@ -2,6 +2,7 @@ import { Box, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableHea
 //import stats from '@/data/finland-stats.json';
 import { Line } from 'react-chartjs-2';
 import { Chart, ChartOptions, ChartData, registerables } from 'chart.js';
+import {useState, useEffect} from 'react'
 
 Chart.register(...registerables);
 
@@ -14,8 +15,22 @@ const options: ChartOptions<'line'> = {
     }
   }
 };
+type Stats = {
+  year: number,
+  population: number,
+  averageTemperature: number, 
+}
+
 
 export default function FinlandPage() {
+  const [stats, setStats] = useState<Stats[]>([])
+
+  const fetchData = async ()=>{
+    const res = await fetch('http://localhost:8000/api/stats')
+    const data = await res.json()
+    console.log(data)
+    setStats(data)
+  }
   const populationData: ChartData<'line'> = {
     labels: stats.map(stat => stat.year), // <- x axeln
     datasets: [
@@ -34,6 +49,9 @@ export default function FinlandPage() {
       }
     ]
   };
+  useEffect(()=>{
+    fetchData()
+  },[])
   return (
     <Box sx={{width: '100%', maxWidth: '1280px', m: '0 auto', p: 2}}>
       <Typography component="h1" variant="h4" sx={{mb: 4}}>Finland</Typography>
