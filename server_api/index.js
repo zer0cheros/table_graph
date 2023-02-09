@@ -1,5 +1,6 @@
 import express from "express";
 import stats from '../src/data/finland-stats.json' assert { type:"json" }
+import orders from '../src/data/orders.json' assert { type: "json" }
 import cors from 'cors' 
 
 const app = express();
@@ -12,6 +13,10 @@ app.get("/", (req, res) => {
 
 app.get('/api/stats', (req, res)=>{
   res.status(200).json(stats)
+})
+
+app.get('/api/orders', (req, res)=>{
+  res.status(200).json(orders)
 })
 
 app.listen(port, () => {

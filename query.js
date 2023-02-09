@@ -1,9 +1,11 @@
+
+
 const mysql = require('serverless-mysql')({
     config: {
-      host: '<host>',
-      user: '<user>',
-      password: '<password>',
-      database: '<database>'
+      host: 'localhost',
+      user: 'chris',
+      password: '',
+      database: 'db'
     }
   });
   
@@ -51,3 +53,5 @@ const mysql = require('serverless-mysql')({
       await mysql.end();
     }
   }
+
+createEnergyConsumptionTable() 
